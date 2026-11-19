@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RECETAS</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <nav id="menu-fijo">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="historias.html">Historias</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="cuenta.html#registro">Registrate</a></li>
+                <li><a href="cuenta.html#login">Inicia sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section>
+
+    <article class="banner-recetas">
+        <h1>NUESTRAS RECETAS</h1>
+    </article>
+
+    <!-- ========== DUMPLINGS ========== -->
+    <article class="principal-recetas" id="receta-dumplings">
+        <div class="texto-receta">
+            <h2>DUMPLINGS</h2>
+            <p class="descripcion-receta">Masa finita, relleno jugoso y cocción al vapor. Un clásico para compartir.</p>
+
+            <div class="selector-personas">
+                <span>Calcular para:</span>
+                <button class="btn-personas" onclick="dumplings(2)">2 personas</button>
+                <button class="btn-personas" onclick="dumplings(4)">4 personas</button>
+                <button class="btn-personas" onclick="dumplings(6)">6 personas</button>
+            </div>
+            <p class="mensaje-calculo" id="mensaje-dumplings">Receta calculada para 2 personas. Ideal para una cena de a dos.</p>
+
+            <div class="detalle-receta">
+                <div class="ingredientes-receta">
+                    <h3>Ingredientes</h3>
+                    <ul id="lista-dumplings">
+                        <li>200 g de harina</li>
+                        <li>100 ml de agua</li>
+                        <li>150 g de cerdo picado</li>
+                        <li>10 g de jengibre</li>
+                        <li>2 cebollas de verdeo</li>
+                    </ul>
+                </div>
+                <div class="pasos-receta">
+                    <h3>Paso a paso</h3>
+                    <ul>
+                        <li>Mezclar el relleno</li>
+                        <li>Armar los dumplings</li>
+                        <li>Cocinar al vapor 10 min</li>
+                        <li>Servir con salsa de soja</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="consejo-receta" id="consejo-dumplings">Con estas cantidades salen unos 12 dumplings. Tip: dejá descansar la masa 20 minutos antes de estirarla.</p>
+        </div>
+
+        <div class="foto-receta">
+            <img src="img/dumpling.jpg" alt="Dumplings">
+        </div>
+    </article>
+
+    <!-- ========== ARANCINIS ========== -->
+    <article class="principal-recetas" id="receta-arancinis">
+        <div class="texto-receta">
+            <h2>ARANCINIS</h2>
+            <p class="descripcion-receta">Bolitas de arroz crocantes por fuera y con queso derretido por dentro.</p>
+
+            <div class="selector-personas">
+                <span>Calcular para:</span>
+                <button class="btn-personas" onclick="arancinis(2)">2 personas</button>
+                <button class="btn-personas" onclick="arancinis(4)">4 personas</button>
+                <button class="btn-personas" onclick="arancinis(6)">6 personas</button>
+            </div>
+            <p class="mensaje-calculo" id="mensaje-arancinis">Receta calculada para 2 personas. Ideal para una cena de a dos.</p>
+
+            <div class="detalle-receta">
+                <div class="ingredientes-receta">
+                    <h3>Ingredientes</h3>
+                    <ul id="lista-arancinis">
+                        <li>200 g de arroz</li>
+                        <li>100 g de queso</li>
+                        <li>80 g de pan rallado</li>
+                        <li>2 huevos</li>
+                        <li>300 ml de aceite</li>
+                    </ul>
+                </div>
+                <div class="pasos-receta">
+                    <h3>Paso a paso</h3>
+                    <ul>
+                        <li>Armar bolitas de arroz</li>
+                        <li>Rebozar</li>
+                        <li>Freír hasta dorar</li>
+                        <li>Servir con salsa de tomate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="consejo-receta" id="consejo-arancinis">Con estas cantidades salen unos 6 arancinis. Tip: usá arroz del día anterior, queda más firme.</p>
+        </div>
+
+        <div class="foto-receta">
+            <img src="img/arancinis.jpg" alt="Arancinis">
+        </div>
+    </article>
+
+    <!-- ========== SANDO DE CERDO ========== -->
+    <article class="principal-recetas" id="receta-sando">
+        <div class="texto-receta">
+            <h2>SANDO DE CERDO</h2>
+            <p class="descripcion-receta">Cerdo apanado y crocante, pan brioche blandito y mucha barbacoa.</p>
+
+            <div class="selector-personas">
+                <span>Calcular para:</span>
+                <button class="btn-personas" onclick="sando(2)">2 personas</button>
+                <button class="btn-personas" onclick="sando(4)">4 personas</button>
+                <button class="btn-personas" onclick="sando(6)">6 personas</button>
+            </div>
+            <p class="mensaje-calculo" id="mensaje-sando">Receta calculada para 2 personas. Ideal para una cena de a dos.</p>
+
+            <div class="detalle-receta">
+                <div class="ingredientes-receta">
+                    <h3>Ingredientes</h3>
+                    <ul id="lista-sando">
+                        <li>300 g de bondiola de cerdo</li>
+                        <li>2 panes brioche</li>
+                        <li>60 ml de barbacoa</li>
+                        <li>4 g de sal</li>
+                        <li>300 g de papas</li>
+                    </ul>
+                </div>
+                <div class="pasos-receta">
+                    <h3>Paso a paso</h3>
+                    <ul>
+                        <li>Apanar el cerdo</li>
+                        <li>Cortar el pan brioche</li>
+                        <li>Cortar ambos y unirlos con barbacoa</li>
+                        <li>Acompañarlo con papas fritas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="consejo-receta" id="consejo-sando">Con estas cantidades salen 2 sandwiches. Tip: tostá un poco el pan antes de armarlo.</p>
+        </div>
+
+        <div class="foto-receta">
+            <img src="img/sando2 (3).jpg" alt="SANDO DE CERDO">
+        </div>
+    </article>
+
+</section>
+
+<footer>
+    <section class="columna-footer">
+        <h3>Linguini's Kitchen</h3>
+        <p>Cocina con pasión, para compartir.</p>
+        <p>© 2026 Linguini's Kitchen</p>
+    </section>
+
+    <section class="columna-footer">
+        <h3>Navegación</h3>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </section>
+
+    <section class="columna-footer">
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="https://mail.google.com/mail/?view=cm&to=cocinaconlinguini@gmail.com">cocinaconlinguini@gmail.com</a></li>
+            <li><a href="https://wa.me/5491130705792">+54 11 3070-5792</a></li>
+            <li>Buenos Aires, Argentina</li>
+        </ul>
+    </section>
+</footer>
+
+<script src="./funciones.js"></script>
+
+</body>
+</html>

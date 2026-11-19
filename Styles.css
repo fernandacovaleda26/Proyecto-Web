@@ -1,0 +1,1359 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kaushan+Script&family=Lobster&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(245, 203, 89);
+	margin: 0;
+}
+
+/* Menu de navegacion*/
+header{
+	width: 88%;
+	margin: 25px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #8f986b;
+	padding: 10px 40px;
+	border-radius: 50px;
+}
+
+header img{
+	width: 60px;
+	height: auto;
+	display: block;
+}
+
+#menu-fijo ul li{
+	margin-left: 20px;
+}
+
+#menu-fijo ul li a{
+	text-decoration: none;
+	color: blanchedalmond;
+	padding: 8px 14px;
+	border-radius: 50px;
+	display: inline-block;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#menu-fijo ul li a:hover{
+	background-color: #441b15;
+	color: blanchedalmond;
+	transform: scale(1.05);
+}
+#menu-fijo ul{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	font-family: 'Franklin Gothic Medium', sans-serif; /*cambiar estilo de fuente*/
+	margin: 0;
+	padding: 0;
+}
+
+
+.principal{
+	width: 88%;
+	margin: 35px auto;
+	display: flex;
+	align-items: stretch; /* Iguala la altura exacta de ambas tarjetas */
+	background-color: #441b15;
+	padding: 25px;
+	border-radius: 50px;
+}
+
+
+/* Contenedor izquierdo del queso  */
+#contenedor_general{  /*contenedor izquierdo*/
+	width: 50%;
+	padding: 20px 15px;
+	background-color: blanchedalmond;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; /* Arranca arriba igual que Linguini */
+	align-items: center;
+	text-align: center;
+}
+
+/* Columna interior con textos y foto */
+#contenedor_general div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contenedor_general h2{
+	font-size: 28px;
+	color: #441b15;
+	margin-bottom: 12px;
+}
+
+#contenedor_general p{
+	font-size: 17px;
+	color: #441b15;
+	line-height: 25px;
+	margin-bottom: 12px;
+}
+
+/* Imagen del queso  */
+#contenedor_general img{
+	width: 195px; 
+	height: auto;
+}
+
+#contenedor_imagen{ /*contenedor con la foto de linguini*/
+	width: 50%;
+	padding: 20px 20px 0 25px; /* 0 abajo para que la imagen toque la base */
+	background-color: #8f986b;
+	border-radius: 50px;
+	overflow: hidden;          /* Corta la imagen en la esquina*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;     /* Todos los hijos apoyados */
+}
+
+/* texto dentro del contenedor derecho */
+#titulo-principal{
+	width: 58%;
+	margin: auto 0;            /* Centra el texto en vertical*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+/* Titulo principal */
+#titulo-principal h1{
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #fdf6e3;
+	white-space: nowrap;       /*el texto quede en una sola linea */
+	margin-bottom: 12px;
+}
+
+#titulo-principal p{
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+
+#boton-contrataatuchef{
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #441b15;
+	padding: 13px 26px;
+	border-radius: 50px;
+	font-size: 15px;
+	margin-top: 25px; /* Empuja el botn abajo */
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+#boton-contrataatuchef:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+/* Imagen de Linguini sin flotar */
+#contenedor_imagen img{
+	width: 38%;
+	height: auto;
+	display: block;
+}
+
+/* Bloque secundario  */
+.secundario{
+	width: 88%;
+	margin: 45px auto 30px auto;
+	display: flex;
+	flex-direction: column; /*  botón arriba y los platos abajo */
+	align-items: center;     /* Centra todo horizontalmente */
+	background-color: #441b15;
+	border-radius: 50px;
+	padding: 20px;
+}
+
+#boton-recetas{
+	color: #441b15;
+	text-decoration: none;
+	background-color: #8f986b;
+	padding: 10px 22px;
+	border-radius: 50px;
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 18px; /* Separa el boton de los platos */
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#boton-recetas:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+/* Fila con los 3 platos */
+#contenedor-platos{
+	width: 100%;
+	display: flex;
+	flex-direction: row;     /* Platos uno al lado del otro */
+	justify-content: center; /* Centrados en fila */
+	align-items: center;
+}
+
+/* Tarjetas de comidas */
+#contenedor-platos div{
+	width: 16%;
+	margin: 0 3%;
+	text-align: center;
+}
+
+/* Fotos de comida cuadradas */
+#contenedor-platos div img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50px;
+}
+
+/* Titulos de cada comida */
+#contenedor-platos div h4{
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	color: blanchedalmond;
+}
+
+#contenedor-platos div a{
+	text-decoration: none;
+	color: blanchedalmond;
+	text-align: center;
+	transition: color 0.3s ease;
+}
+
+#contenedor-platos div a:hover{
+	color: rgb(245, 203, 89);
+}
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #441b15;
+	color: blanchedalmond;
+	width: 88%;
+	margin: 30px auto;
+	padding: 40px;
+	border-radius: 50px;
+}
+
+footer img{
+	width: 40px;
+	margin: 0 10px;
+}
+
+/* 3 columnas*/
+.columna-footer{
+	width: 28%;
+	margin: 0 2%;
+}
+
+.columna-footer h3{
+	color: #8f986b;
+	margin-bottom: 15px;
+}
+
+.columna-footer ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.columna-footer li{
+	margin-bottom: 8px;
+}
+
+.columna-footer p{
+	margin: 0 0 8px 0;
+}
+
+.columna-footer a{
+	color: blanchedalmond;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.columna-footer a:hover{
+	color: rgb(245, 203, 89);
+}
+
+.redes-footer{
+	margin-top: 15px;
+}
+
+
+/*ACA TERMINA LA PAGINA DE INICIOOOOOO*/ 
+
+
+.banner-recetas{
+	background-image: url(img/BANNER-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #441b15;
+	width: 88%;
+	padding: 70px 0;           /* El alto lo da el contenido + este aire (antes height: 200px) */
+	margin: 30px auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner-recetas h1{
+	background-color: rgb(245, 203, 89);
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 50px;
+}
+
+/* Cada receta: texto a la izquierda y foto a la derecha con flex */
+/* min-height para que las 3 recetas midan lo mismo */
+.principal-recetas{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #441b15;
+	width: 88%;
+	min-height: 560px;
+	margin: 30px auto;
+	padding: 25px 40px;
+	border-radius: 50px;
+}
+.principal-recetas .texto-receta{
+	width: 58%;
+	color: white;
+	text-align: center;
+}
+
+.principal-recetas .texto-receta h2{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+/* Texto que acompana a cada receta */
+.descripcion-receta{
+	font-size: 16px;
+	line-height: 22px;
+	color: blanchedalmond;
+	margin-bottom: 15px;
+}
+
+/* Selector de 2  4  6 personas */
+.selector-personas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.selector-personas span{
+	font-size: 15px;
+	color: blanchedalmond;
+	margin-right: 10px;
+}
+
+.btn-personas{
+	background-color: #8f986b;
+	color: #441b15;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 18px;
+	margin: 4px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-personas:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+/* Boton de opcion elegida */
+.btn-personas.activo{
+	background-color: blanchedalmond;
+	color: #441b15;
+}
+
+.mensaje-calculo{
+	font-size: 15px;
+	font-style: italic;
+	color: blanchedalmond;
+	margin-bottom: 15px;
+}
+
+.cantidad{
+	font-weight: bold;
+}
+
+.consejo-receta{
+	font-size: 15px;
+	line-height: 21px;
+	color: blanchedalmond;
+	margin-top: 15px;
+}
+
+.detalle-receta ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin: 10px 0;
+	padding-left: 15px;
+}
+
+.detalle-receta ul li{
+	margin-bottom: 4px;
+	color: #441b15;
+	text-align: left;
+}
+
+.detalle-receta h3{
+	font-size: 22px;
+	color: #441b15;
+}
+
+.detalle-receta{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: bisque;
+	padding: 20px 35px;
+	border-radius: 50px;
+}
+
+.ingredientes-receta{
+	width: 48%;
+}
+.pasos-receta{
+	width: 48%;
+}
+
+
+.principal-recetas .foto-receta{
+	width: 38%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.principal-recetas .foto-receta img{
+	width: 85%;
+	height: auto;
+	border-radius: 50px;
+	display: block;
+}
+
+
+
+
+
+/*    CONOCENOS   
+*/
+
+
+
+.banner-conocenos{
+	background-image: url(img/equipo-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #441b15;
+	width: 88%;
+	padding: 70px 0;           /* El alto lo da el contenido + aire */
+	margin: 30px auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-conocenos h1{
+	background-color: rgb(245, 203, 89);
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 50px;
+}
+
+/* Los 3 bloques de cocineros con el mismo ancho y alto */
+.principal-conocenos{
+	width: 88%;
+	margin: 30px auto;
+	min-height: 360px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #8f986b;
+	padding: 25px 40px;
+	border-radius: 50px;
+}
+
+.principal-conocenos .texto-cocinero{
+	width: 60%;
+	color: white;
+	text-align: left;
+}
+
+.principal-conocenos .texto-cocinero h2{
+	font-size: 30px;
+	color: #fdf6e3;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.detalle-cocinero{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: bisque;
+	padding: 20px 35px;
+	border-radius: 50px;
+}
+
+.detalle-cocinero ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin: 10px 0;
+	padding-left: 15px;
+}
+
+.detalle-cocinero ul li{
+	margin-bottom: 4px;
+	color: #441b15;
+	text-align: left;
+	font-size: 14px;
+}
+
+.detalle-cocinero h3{
+	font-size: 18px;
+	color: #441b15;
+	margin-bottom: 5px;
+}
+
+.habilidades-cocinero{
+	width: 48%;
+}
+
+.capacidades-cocinero{
+	width: 48%;
+}
+
+.principal-conocenos .foto-cocinero{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.principal-conocenos .foto-cocinero a{
+	width: 55%;
+}
+
+.principal-conocenos .foto-cocinero img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	display: block;
+}
+
+.boton-historia{
+	color: #e8a87c;
+	text-decoration: none;
+	background-color: #441b15;
+	padding: 10px 24px;
+	border-radius: 50px;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-historia:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+.principal-conocenos .foto-cocinero .boton-historia{
+	width: auto;
+}
+
+
+/* SERVICIOSssssSSS*/
+
+.banner-servicios{
+	background-image: url(img/BANNER-SERVICIOS-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #441b15;
+	width: 88%;
+	padding: 70px 0;           /* El alto lo da el contenido + este aire */
+	margin: 30px auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-servicios h1{
+	background-color: rgb(245, 203, 89);
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 50px;
+}
+
+.grilla-servicios{
+	width: 88%;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Las 4 tarjetas de servicios */
+.tarjeta-servicio{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #8f986b;
+	width: 48%;
+	min-height: 220px;
+	margin-bottom: 25px;
+	padding: 20px 30px;
+	border-radius: 50px;
+}
+
+.tarjeta-servicio .foto-servicio{
+	width: 38%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarjeta-servicio .foto-servicio img{
+	width: 66%;
+	height: auto;
+	border-radius: 50%;
+	display: block;
+}
+
+.tarjeta-servicio .texto-servicio{
+	width: 58%;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tarjeta-servicio .texto-servicio h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fdf6e3;
+	margin-bottom: 8px;
+}
+
+.tarjeta-servicio .texto-servicio p{
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 12px;
+}
+
+/* ESTILO DE BOTONES TODOS IGUALES CAPO */
+#aprendeacocinar,
+#hacetuevento,
+#contratanos,
+#elegitusproductos{
+	color: #e8a87c;
+	text-decoration: none;
+	background-color: #441b15;
+	padding: 8px 20px;
+	border-radius: 50px;
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#aprendeacocinar:hover,
+#hacetuevento:hover,
+#contratanos:hover,
+#elegitusproductos:hover{
+	background-color: #8f986b;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+
+/* REGISTRO E INICIO */
+
+.banner-cuenta{
+	background-color: #441b15;
+	width: 88%;
+	padding: 70px 0;
+	margin: 30px auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-cuenta h1{
+	background-color: rgb(245, 203, 89);
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 50px;
+}
+
+/* Las dos tarjetas de registro y login miden lo mismo y se acomodan con flex-wrap */
+.contenedor-cuenta{
+	width: 88%;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.tarjeta-cuenta{
+	display: flex;
+	flex-direction: column;
+	background-color: #8f986b;
+	width: 48%;
+	margin-bottom: 25px;
+	padding: 35px 40px;
+	border-radius: 50px;
+}
+
+.tarjeta-cuenta h2{
+	font-size: 28px;
+	color: #fdf6e3;
+	margin-bottom: 10px;
+}
+
+.tarjeta-cuenta p{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.tarjeta-cuenta label{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #441b15;
+	margin: 12px 0 5px 15px;
+}
+
+.tarjeta-cuenta input{
+	width: 100%;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 50px;
+	background-color: blanchedalmond;
+	color: #441b15;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
+.boton-cuenta{
+	background-color: #441b15;
+	color: blanchedalmond;
+	border: none;
+	border-radius: 50px;
+	padding: 12px 28px;
+	margin-top: 22px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-cuenta:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+/* Mensajes de error */
+.tarjeta-cuenta .mensaje-cuenta{
+	margin-top: 15px;
+	margin-bottom: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tarjeta-cuenta .mensaje-cuenta.error{
+	background-color: #441b15;
+	color: blanchedalmond;
+	padding: 10px 20px;
+	border-radius: 50px;
+}
+
+.tarjeta-cuenta .mensaje-cuenta.ok{
+	background-color: blanchedalmond;
+	color: #441b15;
+	padding: 10px 20px;
+	border-radius: 50px;
+}
+
+/* Panel de bienvenida hasta q detecta una sesion */
+.panel-sesion{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #441b15;
+	color: blanchedalmond;
+	width: 88%;
+	margin: 30px auto;
+	padding: 40px;
+	border-radius: 50px;
+}
+
+.panel-sesion h2{
+	font-size: 34px;
+	margin-bottom: 10px;
+}
+
+.panel-sesion p{
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+.panel-sesion .boton-cuenta{
+	background-color: #8f986b;
+	color: #441b15;
+	margin: 10px 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.panel-sesion .boton-cuenta:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+h1{
+	font-family: 'Fraunces', serif; ;
+}
+
+h2, h3, h4, p, li, a{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*HISTORIAS*/
+.banner-historias{
+	background-color: #441b15;
+	width: 88%;
+	padding: 70px 0;
+	margin: 30px auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-historias h1{
+	background-color: rgb(245, 203, 89);
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 50px;
+}
+
+.tarjeta-historia{
+	width: 88%;
+	margin: 30px auto;
+	min-height: 360px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #8f986b;
+	padding: 25px 40px;
+	border-radius: 50px;
+}
+
+.tarjeta-historia .texto-historia{
+	width: 60%;
+	color: white;
+}
+
+.tarjeta-historia .texto-historia h2{
+	font-size: 30px;
+	color: #fdf6e3;
+	margin-bottom: 15px;
+}
+
+.tarjeta-historia .texto-historia p{
+	background-color: bisque;
+	color: #441b15;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 20px 35px;
+	border-radius: 50px;
+}
+
+.tarjeta-historia .foto-historia{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarjeta-historia .foto-historia img{
+	width: 55%;
+	height: auto;
+	border-radius: 50%;
+	display: block;
+}
+
+.boton-contratame{
+	color: #e8a87c;
+	text-decoration: none;
+	background-color: #441b15;
+	padding: 10px 24px;
+	border-radius: 50px;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-contratame:hover{
+	background-color: blanchedalmond;
+	color: #441b15;
+	transform: scale(1.05);
+}
+
+
+
+
+
+
+/*
+   ANIMACION DE IMAGENES AL PASAR EL CURSOR
+   Se usa transform: scale() con transicion suaaaaaaaaave
+   */
+
+header img,
+#contenedor_general img,
+#contenedor_imagen img,
+#contenedor-platos div img,
+.principal-recetas .foto-receta img,
+.principal-conocenos .foto-cocinero img,
+.tarjeta-servicio .foto-servicio img,
+footer img{
+	transition: transform 0.35s ease;
+	cursor: pointer;
+}
+
+header img:hover,
+#contenedor_general img:hover,
+#contenedor_imagen img:hover,
+#contenedor-platos div img:hover,
+.principal-recetas .foto-receta img:hover,
+.principal-conocenos .foto-cocinero img:hover,
+.tarjeta-servicio .foto-servicio img:hover,
+footer img:hover{
+	transform: scale(1.06);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	
+}
+
+
+
+@media (max-width: 768px) {
+	header{
+		flex-direction: column;
+	}
+  .principal{
+	width: 95%;
+	margin: 20px auto;
+	flex-direction: column-reverse;
+}
+
+#contenedor_general{
+	height: auto;
+	margin: 25px 0 0 0;
+	width: 100%;
+}
+
+#contenedor_imagen{
+	height: auto;
+	margin: 0;
+	width: 100%;
+}  
+#boton-contrataatuchef{
+	padding: 10px 15px;
+	font-size: 16px;
+}
+
+#titulo-principal h1{
+	font-size: 32px;
+}
+   .secundario{
+	width: 95%;
+	margin: 30px auto;
+   }
+
+   #contenedor-platos div{
+	width: 28%;
+	margin: 0 2%;
+   }
+   footer{
+	flex-wrap: wrap;
+   }
+
+   /* Mismo ancho para todos los bloques en tablet */
+   header,
+   footer,
+   .banner-recetas,
+   .banner-conocenos,
+   .banner-servicios,
+   .banner-cuenta,
+   .banner-historias,
+   .principal-recetas,
+   .principal-conocenos,
+   .tarjeta-historia,
+   .grilla-servicios,
+   .contenedor-cuenta,
+   .panel-sesion{
+	width: 95%;
+   }
+
+   /* Apiladas en tablet */
+   .principal-recetas{
+	min-height: auto;
+   }
+
+   /* una tarjeta x fila*/
+   .tarjeta-cuenta{
+	width: 100%;
+   }
+
+   /* Recetas, conocenos e historias: texto arriba y foto abajo */
+   .principal-recetas,
+   .principal-conocenos,
+   .tarjeta-historia{
+	flex-direction: column;
+   }
+
+   .tarjeta-historia{
+	min-height: auto;
+   }
+
+   .principal-recetas .texto-receta,
+   .principal-conocenos .texto-cocinero,
+   .tarjeta-historia .texto-historia{
+	width: 100%;
+   }
+
+   .principal-recetas .foto-receta,
+   .principal-conocenos .foto-cocinero,
+   .tarjeta-historia .foto-historia{
+	width: 100%;
+	margin-top: 20px;
+   }
+
+   .principal-recetas .foto-receta img{
+	width: 60%;
+   }
+
+   .principal-conocenos .foto-cocinero a{
+	width: 40%;
+   }
+
+   .tarjeta-historia .foto-historia img{
+	width: 40%;
+   }
+
+   /* Servicios una tarjeta x fila */
+   .tarjeta-servicio{
+	width: 100%;
+   }
+}
+
+@media (max-width: 480px){
+	header{
+		flex-direction: column;
+	}
+	header img{
+		width: 100px;
+	}
+	.principal{
+		width: 95%;
+		margin: 15px auto;
+		flex-direction: column-reverse;
+		padding: 20px;
+	}
+	.principal div{
+		width: 100%;
+		padding: 10px;
+	}
+	#contenedor_general{
+	height: auto;
+	margin: 25px 0 0 0;
+	width: 100%;
+}
+	#contenedor_general img{
+	width: 180px;
+}
+
+    #contenedor_imagen{
+	height: auto;
+	margin: 0;
+	width: 100%;
+	flex-direction: column-reverse;
+	align-items: center;
+	text-align: center;
+}  
+    #titulo-principal{
+	width: 100%;
+	align-items: center;
+}
+    #contenedor_imagen img{
+	width: 160px;
+	margin-bottom: 15px;
+}
+    #boton-contrataatuchef{
+	padding: 8px 12px;
+	font-size: 14px;
+	}
+
+	.secundario{
+		width: 95%;
+		margin: 20px auto;
+	}
+	#contenedor-platos{
+		flex-direction: column;
+	}
+	#contenedor-platos div{
+		width: 80%;
+		margin: 10px 0;
+	}
+	footer{
+		flex-wrap: wrap;
+		padding: 25px;
+	}
+	.columna-footer{
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	/* Banners + pequeños */
+	.banner-recetas,
+	.banner-conocenos,
+	.banner-servicios,
+	.banner-cuenta,
+	.banner-historias{
+		padding: 40px 0;
+	}
+	.banner-recetas h1,
+	.banner-conocenos h1,
+	.banner-servicios h1,
+	.banner-cuenta h1,
+	.banner-historias h1{
+		font-size: 26px;
+		padding: 8px 20px;
+	}
+
+	/*  */
+	.tarjeta-cuenta,
+	.panel-sesion{
+		padding: 25px;
+	}
+
+	/* Foto de receta un poco mas chica en celular */
+	.principal-recetas .foto-receta img{
+		width: 70%;
+	}
+
+	/* Recetas, conocenos e historias */
+	.principal-recetas,
+	.principal-conocenos,
+	.tarjeta-historia{
+		padding: 20px;
+	}
+	.principal-recetas .texto-receta h2{
+		font-size: 28px;
+	}
+	.tarjeta-historia .texto-historia h2{
+		font-size: 24px;
+	}
+	.tarjeta-historia .texto-historia p{
+		padding: 20px 25px;
+	}
+	.tarjeta-historia .foto-historia img{
+		width: 55%;
+	}
+	.detalle-receta,
+	.detalle-cocinero{
+		flex-direction: column;
+		padding: 20px 25px;
+	}
+	.ingredientes-receta,
+	.pasos-receta,
+	.habilidades-cocinero,
+	.capacidades-cocinero{
+		width: 100%;
+	}
+
+	/* Servicios  foto arriba y texto abajo dentro de cada tarjeta */
+	.tarjeta-servicio{
+		flex-direction: column;
+	}
+	.tarjeta-servicio .foto-servicio,
+	.tarjeta-servicio .texto-servicio{
+		width: 100%;
+	}
+	.tarjeta-servicio .foto-servicio img{
+		width: 45%;
+	}
+}

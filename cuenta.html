@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu cuenta - Linguini's Kitchen</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <nav id="menu-fijo">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="cuenta.html#registro">Registrate</a></li>
+                <li><a href="cuenta.html#login">Inicia sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section>
+
+    <article class="banner-cuenta">
+        <h1>TU CUENTA</h1>
+    </article>
+
+    <!-- Se muestra solo después de iniciar sesión (lo controla funciones.js) -->
+    <article class="panel-sesion" id="panel-sesion">
+        <h2 id="saludo-usuario">Hola</h2>
+        <p>Ya iniciaste sesión.</p>
+        <div>
+            <a href="index.html" class="boton-cuenta">IR AL INICIO</a>
+            <button class="boton-cuenta" onclick="cerrarSesion()">CERRAR SESION</button>
+        </div>
+    </article>
+
+    <div class="contenedor-cuenta" id="contenedor-cuenta">
+
+        <!-- ========== REGISTRO ========== -->
+        <article class="tarjeta-cuenta" id="registro">
+            <h2>Registrate</h2>
+            <p>Creá tu cuenta y sumate a la cocina de Linguini.</p>
+
+            <div class="formulario-cuenta">
+                <h4>Nombre</h4>
+                <input id="registro-nombre" placeholder="Tu nombre">
+
+                <h4>Email</h4>
+                <input id="registro-email" placeholder="tuemail@ejemplo.com">
+
+                <h4>Contraseña</h4>
+                <input id="registro-clave" placeholder="Elegí una contraseña">
+
+                <h4>Repetir contraseña</h4>
+                <input id="registro-clave2" placeholder="Repetí tu contraseña">
+
+                <button class="boton-cuenta" onclick="registrarUsuario()">CREAR CUENTA</button>
+            </div>
+
+            <p class="mensaje-cuenta" id="mensaje-registro"></p>
+        </article>
+
+        <!-- ========== INICIAR SESION ========== -->
+        <article class="tarjeta-cuenta" id="login">
+            <h2>Iniciá sesión</h2>
+            <p>Entrá con el email y la contraseña con los que te registraste.</p>
+
+            <div class="formulario-cuenta">
+                <h4>Email</h4>
+                <input id="login-email" placeholder="tuemail@ejemplo.com">
+
+                <h4>Contraseña</h4>
+                <input id="login-clave" placeholder="Tu contraseña">
+
+                <button class="boton-cuenta" onclick="iniciarSesion()">INICIAR SESION</button>
+            </div>
+
+            <p class="mensaje-cuenta" id="mensaje-login"></p>
+        </article>
+
+    </div>
+
+</section>
+
+<footer>
+    <section class="columna-footer">
+        <h3>Linguini's Kitchen</h3>
+        <p>Cocina con pasión, para compartir.</p>
+        <p>© 2026 Linguini's Kitchen</p>
+    </section>
+
+    <section class="columna-footer">
+        <h3>Navegación</h3>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </section>
+
+    <section class="columna-footer">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="https://mail.google.com/mail/?view=cm&to=cocinaconlinguini@gmail.com">cocinaconlinguini@gmail.com</a></li>
+                <li><a href="https://wa.me/5491130705792">+54 11 3070-5792</a></li>
+                <li>Buenos Aires, Argentina</li>
+            </ul>
+        </section>
+</footer>
+
+<script src="./funciones.js"></script>
+
+</body>
+</html>
